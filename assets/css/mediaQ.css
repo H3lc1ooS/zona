@@ -1,0 +1,38 @@
+@media screen and (min-width: 769px) {
+    .hide-desktop {
+        display: none;
+        overflow: hidden;
+    } 
+
+}
+
+@media screen and (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+        overflow: hidden;
+    }
+    
+    .sb-section{
+        flex-direction: column-reverse;
+    }
+    .manga-section {
+        flex-direction: column;
+    }
+
+    .text-bebida-container{
+        width: 100%;
+    }
+
+    .lata-img{
+        width: 50%;
+    }
+
+    .brevemente-section{
+        height: auto;
+    }
+    .brevemente-section h1{
+        font-size: 3rem;
+        padding-top: 4rem;
+    }
+
+}

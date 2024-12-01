@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/general.css">
     <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/mediaQ.css">
 </head>
 
 <body>
@@ -37,7 +38,8 @@
     </header>
 
     <main class="w-full h-full flex flex-col justify-center">
-        <section class="hero w-full h-[90vh] flex justify-evenly items-center bg-gradient-to-l from-[#E5E937] via-[#FDD26D] to-[#F9B963]">
+        <!--  bg-gradient-to-l from-[#E5E937] via-[#FDD26D] to-[#F9B963] -->
+        <section class="hero-section w-full h-[90vh] flex justify-evenly items-center">
 
             <section class="lata w-[40vw] h-full flex items-end justify-center">
                 <img src="assets/img/sabores/manga/front.png" alt="Sabor de Manga" class="img-lata h-[80%]">
@@ -59,24 +61,26 @@
             </section>
         </section>
 
-        <section class="separator w-full h-[70vh]">
+        <section class="separator w-full h-[70vh] flex  col f-center">
+            <h1>zona - hard seltzer</h1>
+            <p>Zona será o primeiro hard seltzer de Angola; uma bebida inovadora, refrescante e cheia de sabor, perfeita para quem busca uma nova experiência leve, moderna e deliciosa!</p>
             
         </section>
         <section class="sabores-section">
 
             <section class="sb-section yuzu-lima-section h-[90vh] p-relative flex row a-center j-around">
-                <img src="./assets/img/zonaout-lima.png" alt="" class="zona-outline absolute">
+                <img src="./assets/img/zonaout7 1.svg" alt="" class="zona-outline absolute">
                 <section class="text-bebida-container flex col gap-1">
                     <img src="./assets/img/zona-lima.svg" alt="">
                     <h1>YUZU & LIMA</h1>
                     <p>Nosso Hard Seltzer de Yuzu e Lima combina o frescor cítrico da lima com a sofisticação exótica do yuzu, criando uma experiência leve e refrescante como nenhuma outra</p>
                 </section>
-                <img src="./assets/img/latas/lata-lima.png" alt="">
+                <img src="./assets/img/latas/lata-lima.png" alt="" class="lata-img">
             </section>
 
             <section class="sb-section manga-section h-[100vh] p-relative flex row  a-center j-around" >
-                <img src="./assets/img/zonaout-manga.png" alt="" class="zona-outline absolute">
-                <img src="./assets/img/latas/lata-manga.png" alt="">
+                <img src="./assets/img/zonaout8 1.svg" alt="" class="zona-outline absolute">
+                <img src="./assets/img/latas/lata-manga.png" alt=""  class="lata-img">
                 <section class="text-bebida-container flex col gap-1">
                     <img src="./assets/img/zona-manga.svg" alt="">
                     <h1>MANGA</h1>
@@ -85,15 +89,19 @@
             </section>
                 
             <section class="sb-section maracuja-section h-[90vh] p-relative flex row  a-center j-around">
-                <img src="./assets/img/zonaout-maracuja.png" alt="" class="zona-outline absolute">
+                <img src="./assets/img/zonaout9 1.svg" alt="" class="zona-outline absolute">
                 <section class="text-bebida-container flex col gap-1">
                     <img src="./assets/img/zona-maracuja.svg" alt="">
                     <h1>MARACUJÁ</h1>
                     <p>Sinta o sabor vibrante do verão com nosso Hard Seltzer de Maracujá! Refrescante e leve, essa bebida traz o equilíbrio perfeito entre a doçura e a acidez exótica do maracujá, ideal para quem busca um toque tropical em qualquer momento.</p>
                 </section>
-                <img src="./assets/img/latas/lata-maracuja.png" alt="" srcset="">
+                <img src="./assets/img/latas/lata-maracuja.png" alt="" class="lata-img">
             </section>
-
+        </section>
+        <section class="brevemente-section h-[100vh] flex col a-center p-relative j-between">
+            <img src="./assets/img/zonaout-lima.png" alt="" class="zona-outline-bv absolute">
+            <h1>brevemente na tua...</h1>
+            <img src="./assets/img/closeup 1.png" alt="">
         </section>
     </main>
 </body>

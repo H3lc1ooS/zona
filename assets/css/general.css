@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 html,
 body,
@@ -12,6 +12,14 @@ body,
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Raleway", serif;
+}
+
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, var(--lima), var(--manga), var(--maracuja));
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s infinite;
 }
 
 .sb-section{
@@ -35,31 +43,72 @@ body,
 .separator{
     background: url(../img/separator-texture.png);
     background-size: cover;
+    color: var(--laranja);
+}
+
+.separator p{
+    width: 50%;
+    text-align: center;
 }
 
 .zona-outline{
-
-    position: absolute;
+    z-index: 1;
     width: 144rem;
-    opacity: 0.2;
-    bottom: 10%;
-    scale: 1.1;
 }
 
 .text-bebida-container{
     width: 40%;
+    z-index: 10;
 }
 
 .text-bebida-container img{
     width: 50%;
 }
 
-.text-bebida-container h1{
+.separator h1,.text-bebida-container h1{
     font-family: "Archivo", sans-serif;
     font-weight: 900;
     font-size: 2.5rem;
 }
-.text-bebida-container p{
+.separator p, .text-bebida-container p{
     font-weight: 700;
     font-size: 1.2rem;
 }
+
+.lata-img{
+    z-index: 10;
+}
+
+.brevemente-section{
+    background-color: var(--lima);
+}
+
+.brevemente-section h1{
+    color: var(--white-color);
+    font-family: "EB Garamond", serif;
+    font-size: 8rem;
+    font-weight: 800;
+    padding-top: 4rem;
+}
+.zona-outline-bv{
+    width: 90rem;
+    opacity: 0.4;
+    bottom: 4rem;
+    z-index: 1;
+}
+.brevemente-section img{
+    z-index: 10;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
