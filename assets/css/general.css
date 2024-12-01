@@ -22,6 +22,9 @@ body{
     background: #FEF7F1;
 }
 
+header{
+    z-index: 100;
+}
 
 .hero-section {
     width: 100%;
@@ -236,5 +239,68 @@ footer{
     .carousel {
       overflow-x: visible;
     }
+  }
+  
+  .nutricion-section{
+    height: auto;
+    background: var(--lima);
+    padding: 5rem;
+  }
+
+  .nutricion-section h1{
+    color: var(--white-color);
+    font-family: "EB Garamond", serif;
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 4rem;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .card {
+    background: #c4c72da2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--verde);
+    font-family: "Archivo", sans-serif;
+    font-weight: 900;
+  }
+  
+  .card p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: var(--verde);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .card {
+      padding: 15px;
+    }
+  
+    .card h3 {
+      font-size: 2rem;
+    }
+  
+    .card p {
+      font-size: 1.5rem;
+    }
+
+    .nutricion-section h1{
+        font-size: 4rem;
+        padding-top: 2rem;
+      }
+
   }
   

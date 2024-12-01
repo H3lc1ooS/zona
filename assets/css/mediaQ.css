@@ -48,6 +48,7 @@
         width: 90%;
     }
 
+    
 
     .sb-section{
         flex-direction: column-reverse;
@@ -62,6 +63,11 @@
 
     .lata-img{
         width: 50%;
+    }
+
+    .nutricion-section{
+        height: auto;
+        padding: 2rem;
     }
 
     .brevemente-section{
