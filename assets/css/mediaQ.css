@@ -12,6 +12,43 @@
         overflow: hidden;
     }
     
+    .separator p{
+        width: 90%;
+    }
+
+    header{
+        z-index: 1000;
+    }
+    #logo-h{
+        animation: opacityAnimation 5s infinite;
+    }    
+
+    .hero-section{
+        
+        padding: 0;
+        justify-content: center;
+    }
+    .manga-lt{
+        position: absolute;
+        left: -50%;
+    }
+    .yuzu-lt{
+         position: absolute;
+        right: -50%;
+    }
+
+    .hero-section .info{
+        width: 150rem; 
+        z-index: 500;
+    }
+    .hero-section .info p{
+        text-align: center;
+    }
+    .hero-section .info img{
+        width: 90%;
+    }
+
+
     .sb-section{
         flex-direction: column-reverse;
     }
@@ -31,7 +68,7 @@
         height: auto;
     }
     .brevemente-section h1{
-        font-size: 3rem;
+        font-size: 5rem;
         padding-top: 4rem;
     }
 
@@ -41,8 +78,9 @@
     }
     
     .social-media .social-links {
-        font-size: 1.5rem;
-        width: 80%;
+        font-size: 2rem;
     }
 
+
+    
 }

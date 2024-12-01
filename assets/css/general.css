@@ -14,16 +14,35 @@ body,
     font-family: "Raleway", serif;
 }
 
+html{
+    font-size: 60.3%;
+}
+
 body{
     background: #FEF7F1;
 }
 
+
 .hero-section {
     width: 100%;
     height: 100vh;
+    padding: 5rem;
+    padding-bottom: 0;
+    overflow: hidden;
     background: linear-gradient(45deg, var(--lima), var(--manga), var(--maracuja));
     background-size: 300% 300%;
     animation: gradientAnimation 8s infinite;
+    align-items: flex-end;
+}
+
+.hero-section .info{
+    width: 70%;
+    padding-top: 5rem;
+}
+.hero-section .info p{
+    font-weight: 800;
+    color: var(--white-color);
+    font-size: 2rem;
 }
 
 .sb-section {
@@ -59,7 +78,7 @@ body{
 
 .zona-outline {
     z-index: 1;
-    width: 144rem;
+    width: 100%;
 }
 
 .text-bebida-container {
@@ -75,13 +94,13 @@ body{
 .text-bebida-container h1 {
     font-family: "Archivo", sans-serif;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 .separator p,
 .text-bebida-container p {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .lata-img {
@@ -90,18 +109,19 @@ body{
 
 .brevemente-section {
     background-color: var(--lima);
+    height: 100vh;
 }
 
 .brevemente-section h1 {
     color: var(--white-color);
     font-family: "EB Garamond", serif;
-    font-size: 8rem;
+    font-size: 13rem;
     font-weight: 800;
-    padding-top: 4rem;
+    padding-top: 8rem;
 }
 
 .zona-outline-bv {
-    width: 90rem;
+    width: 110rem;
     opacity: 0.4;
     bottom: 4rem;
     z-index: 1;
@@ -113,6 +133,7 @@ body{
 
 .social-media{
     padding: 2rem;
+    gap: 2rem;
 }
 
 .social-media .social-links {
@@ -121,6 +142,7 @@ body{
     border: solid var(--laranja) 0.1rem;
     border-radius: 0.5rem;
     padding: 1rem 2rem;
+    gap: 1rem;
 }
 
 .social-foto-area{
@@ -129,15 +151,20 @@ body{
     margin: 0 auto;
 }
 
+
+.social-foto-area::-webkit-scrollbar{
+    height: 0;
+}
+
 .social-foto-area img{
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     object-fit: cover;
 }
 
 footer{
     padding: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .supa-animated {
@@ -174,6 +201,20 @@ footer{
 
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@keyframes opacityAnimation {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.1;
     }
 }
 
