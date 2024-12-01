@@ -14,6 +14,10 @@ body,
     font-family: "Raleway", serif;
 }
 
+body{
+    background: #FEF7F1;
+}
+
 .hero-section {
     width: 100%;
     height: 100vh;
@@ -107,10 +111,55 @@ body,
     z-index: 10;
 }
 
+.social-media{
+    padding: 2rem;
+}
+
 .social-media .social-links {
-    border: solid #FF6702;
+    font-size: 2rem;
+    color: var(--laranja);
+    border: solid var(--laranja) 0.1rem;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.social-foto-area{
+    gap: 1rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.social-foto-area img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+footer{
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.supa-animated {
+    font-family: "Montserrat", sans-serif;
+    animation: changeColor 6s linear infinite;
+    transition: all .1s ease-in-out;
+}
+
+@keyframes changeColor {
+
+    0%,
+    100% {
+        color: #2444FF;
+    }
+
+    33% {
+        color: #24C4FF;
+    }
+
+    66% {
+       color: #040053;
+    }
 }
 
 
@@ -127,3 +176,24 @@ body,
         background-position: 0% 50%;
     }
 }
+
+.carousel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .carousel img {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    border-radius: 8px;
+  }
+  
+  @media (min-width: 768px) {
+    .carousel {
+      overflow-x: visible;
+    }
+  }
+  
