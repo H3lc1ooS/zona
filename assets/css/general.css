@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 html,
 body,
@@ -11,4 +12,54 @@ body,
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Raleway", serif;
+}
+
+.sb-section{
+    padding: 2rem;
+    overflow: visible;
+}
+
+.yuzu-lima-section{
+    background: var(--lima);
+    color: var(--verde);
+}
+.manga-section{
+    background: linear-gradient(180deg, var(--lima) 0%,  var(--manga) 32%);
+    color: var(--laranja);
+}
+.maracuja-section{
+    background: linear-gradient(180deg, var(--manga) 0%,  var(--maracuja) 32%);
+    color: var(--vinho);
+}
+
+.separator{
+    background: url(../img/separator-texture.png);
+    background-size: cover;
+}
+
+.zona-outline{
+
+    position: absolute;
+    width: 144rem;
+    opacity: 0.2;
+    bottom: 10%;
+    scale: 1.1;
+}
+
+.text-bebida-container{
+    width: 40%;
+}
+
+.text-bebida-container img{
+    width: 50%;
+}
+
+.text-bebida-container h1{
+    font-family: "Archivo", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.text-bebida-container p{
+    font-weight: 700;
+    font-size: 1.2rem;
 }
