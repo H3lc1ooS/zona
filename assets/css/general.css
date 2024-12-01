@@ -14,7 +14,7 @@ body,
     font-family: "Raleway", serif;
 }
 
-.hero-section{
+.hero-section {
     width: 100%;
     height: 100vh;
     background: linear-gradient(45deg, var(--lima), var(--manga), var(--maracuja));
@@ -22,93 +22,108 @@ body,
     animation: gradientAnimation 8s infinite;
 }
 
-.sb-section{
+.sb-section {
     padding: 2rem;
     overflow: visible;
 }
 
-.yuzu-lima-section{
+.yuzu-lima-section {
     background: var(--lima);
     color: var(--verde);
 }
-.manga-section{
-    background: linear-gradient(180deg, var(--lima) 0%,  var(--manga) 32%);
+
+.manga-section {
+    background: linear-gradient(180deg, var(--lima) 0%, var(--manga) 32%);
     color: var(--laranja);
 }
-.maracuja-section{
-    background: linear-gradient(180deg, var(--manga) 0%,  var(--maracuja) 32%);
+
+.maracuja-section {
+    background: linear-gradient(180deg, var(--manga) 0%, var(--maracuja) 32%);
     color: var(--vinho);
 }
 
-.separator{
+.separator {
     background: url(../img/separator-texture.png);
     background-size: cover;
     color: var(--laranja);
 }
 
-.separator p{
+.separator p {
     width: 50%;
     text-align: center;
 }
 
-.zona-outline{
+.zona-outline {
     z-index: 1;
     width: 144rem;
 }
 
-.text-bebida-container{
+.text-bebida-container {
     width: 40%;
     z-index: 10;
 }
 
-.text-bebida-container img{
+.text-bebida-container img {
     width: 50%;
 }
 
-.separator h1,.text-bebida-container h1{
+.separator h1,
+.text-bebida-container h1 {
     font-family: "Archivo", sans-serif;
     font-weight: 900;
     font-size: 2.5rem;
 }
-.separator p, .text-bebida-container p{
+
+.separator p,
+.text-bebida-container p {
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-.lata-img{
+.lata-img {
     z-index: 10;
 }
 
-.brevemente-section{
+.brevemente-section {
     background-color: var(--lima);
 }
 
-.brevemente-section h1{
+.brevemente-section h1 {
     color: var(--white-color);
     font-family: "EB Garamond", serif;
     font-size: 8rem;
     font-weight: 800;
     padding-top: 4rem;
 }
-.zona-outline-bv{
+
+.zona-outline-bv {
     width: 90rem;
     opacity: 0.4;
     bottom: 4rem;
     z-index: 1;
 }
-.brevemente-section img{
+
+.brevemente-section img {
     z-index: 10;
+}
+
+.social-media .social-links {
+    border: solid #FF6702;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
 
 @keyframes gradientAnimation {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
+
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
+}
