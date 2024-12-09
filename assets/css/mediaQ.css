@@ -30,8 +30,9 @@
     }
     .manga-lt{
         position: absolute;
-        left: 4rem;
+        left: 5%;
         bottom: -10rem;
+        transform: translateX(-50%);
     }
     .yuzu-lt{
         position: absolute;
@@ -42,8 +43,8 @@
     .maracuja-lt{
         position: absolute;
         bottom: -12rem;
-        right: 4rem;
-
+        right: 5%;
+        transform: translateX(50%);
     }
 
     .img-lata {
@@ -63,14 +64,10 @@
     .separator{
         padding: 2rem;
     }
-    .separator p{
-        text-align: justify;
-    }
     
 
     .sb-section{
         flex-direction: column-reverse;
-        padding: 4rem;
     }
     .manga-section {
         flex-direction: column;
