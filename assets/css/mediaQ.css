@@ -30,11 +30,20 @@
     }
     .manga-lt{
         position: absolute;
-        left: -50%;
+        left: 4rem;
+        bottom: -30rem;
     }
     .yuzu-lt{
-         position: absolute;
-        right: -50%;
+        position: absolute;
+        bottom: -25rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .maracuja-lt{
+        position: absolute;
+        bottom: -34rem;
+        right: 4rem;
+
     }
 
     .hero-section .info{
