@@ -49,6 +49,10 @@ header{
     font-size: 2rem;
 }
 
+.img-lata {
+    height: 80%;
+ }
+
 .sb-section {
     padding: 2rem;
     overflow: visible;
