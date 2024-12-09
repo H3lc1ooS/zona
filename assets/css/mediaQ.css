@@ -31,19 +31,23 @@
     .manga-lt{
         position: absolute;
         left: 4rem;
-        bottom: -30rem;
+        bottom: -10rem;
     }
     .yuzu-lt{
         position: absolute;
-        bottom: -25rem;
+        bottom: -5rem;
         left: 50%;
         transform: translateX(-50%);
     }
     .maracuja-lt{
         position: absolute;
-        bottom: -34rem;
+        bottom: -12rem;
         right: 4rem;
 
+    }
+
+    .img-lata {
+       height: 57%;
     }
 
     .hero-section .info{
@@ -56,11 +60,17 @@
     .hero-section .info img{
         width: 90%;
     }
-
+    .separator{
+        padding: 2rem;
+    }
+    .separator p{
+        text-align: justify;
+    }
     
 
     .sb-section{
         flex-direction: column-reverse;
+        padding: 4rem;
     }
     .manga-section {
         flex-direction: column;
